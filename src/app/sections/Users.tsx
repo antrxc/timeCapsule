@@ -1,5 +1,6 @@
-
+import { cn } from "@/lib/utils";
 import { SparklesText } from "@/components/magicui/sparkles-text";
+import { Marquee } from "@/components/magicui/marquee";
 
 export function Users() {
     const names = [
@@ -15,14 +16,23 @@ export function Users() {
         "Julia", "Julian", "Justin", "Kai", "Kate", "Katherine", "Kayla", "Kaylee", "Kevin", "Kyle",
         "Lauren", "Leo", "Liam", "Lillian", "Lily", "Logan", "Lucas", "Lucy", "Luke", "Madison",
       ];
+
+      const firstRow = names.slice(0, names.length / 2);
+      const secondRow = names.slice(names.length / 2);
   return (
-    <div className="grid grid-cols-6 gap-4 w-fit m-auto">
-        {names.map((name, index) => (
-            <div className="self-center" key={index}>
-                <SparklesText text={name} className="text-2xl text-gray-600 " sparklesCount={1} key={index} />
-            </div>
-            
-        ))}
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+               <Marquee pauseOnHover className="[--duration:20s]">
+                {firstRow.map((review) => (
+                <SparklesText text={review} key={review} className="text-2xl text-gray-600 " sparklesCount={1}/>
+                ))}
+            </Marquee>
+            <Marquee reverse pauseOnHover className="[--duration:20s]">
+                {secondRow.map((review) => (
+                <SparklesText text={review} key={review} className="text-2xl text-gray-600 " sparklesCount={1}  />
+                ))}
+            </Marquee>
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
     </div>
   );
 }
