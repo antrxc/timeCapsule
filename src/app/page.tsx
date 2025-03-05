@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Navbar } from "./sections/Navbar";
 import { Particles } from "@/components/magicui/particles";
 import { Users } from "./sections/Users";
+import names from "@/names/names";
 
 
 
@@ -19,6 +20,7 @@ export default function Home() {
 <div className="bg-color-1">
   <Navbar />
   <Hero />
+  <Users />
   <Particles
         className="absolute inset-0 z-0 border-0"
         quantity={100}
