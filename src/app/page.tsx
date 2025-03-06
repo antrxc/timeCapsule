@@ -11,9 +11,6 @@ import Footer from "./sections/Footer";
 
 
 export default function Home() {
-        // particles
-        const { resolvedTheme } = useTheme();
-        const [color, setColor] = useState("#000000");
   return (
     
 
@@ -26,7 +23,7 @@ export default function Home() {
         className="absolute inset-0 z-0 border-0"
         quantity={100}
         ease={30}
-        color={color}
+        color={"black"}
         refresh
       /> 
 </div>
