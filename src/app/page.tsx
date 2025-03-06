@@ -1,7 +1,5 @@
 "use client";
 import Hero from "./sections/Hero";
-import { useTheme } from "next-themes";
-import { useState } from "react";
 import { Navbar } from "./sections/Navbar";
 import { Particles } from "@/components/magicui/particles";
 import { Users } from "./sections/Users";
