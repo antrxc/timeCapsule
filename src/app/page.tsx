@@ -5,7 +5,6 @@ import { useState } from "react";
 import { Navbar } from "./sections/Navbar";
 import { Particles } from "@/components/magicui/particles";
 import { Users } from "./sections/Users";
-import names from "@/names/names";
 import Footer from "./sections/Footer";
 
 

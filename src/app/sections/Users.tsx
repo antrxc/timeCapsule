@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+
 import { SparklesText } from "@/components/magicui/sparkles-text";
 import names from "@/names/names";
 

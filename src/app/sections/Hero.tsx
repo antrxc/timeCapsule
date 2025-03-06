@@ -1,9 +1,5 @@
 import React from 'react'
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
-import {Particles} from '@/components/magicui/particles'
 import { LineShadowText } from '@/components/magicui/line-shadow-text'
-import { AvatarCircles } from '@/components/magicui/avatar-circles';
 
 function Hero() {
 
