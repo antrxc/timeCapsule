@@ -6,6 +6,7 @@ import { Navbar } from "./sections/Navbar";
 import { Particles } from "@/components/magicui/particles";
 import { Users } from "./sections/Users";
 import names from "@/names/names";
+import Footer from "./sections/Footer";
 
 
 
@@ -21,6 +22,7 @@ export default function Home() {
   <Navbar />
   <Hero />
   <Users />
+  <Footer/>
   <Particles
         className="absolute inset-0 z-0 border-0"
         quantity={100}
