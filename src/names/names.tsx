@@ -2,6 +2,7 @@
 // Do not edit manually
 
 const names: string[] = [
+  "Antony",
   "Antric"
 ];
 

@@ -12,7 +12,7 @@ export default function Home() {
   return (
     
 
-<div className="bg-color-1">
+<div className="bg-color-1 min-w-screen max-w-screen min-h-screen relative z-10">
   <Navbar />
   <Hero />
   <Users />

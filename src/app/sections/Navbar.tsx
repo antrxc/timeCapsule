@@ -63,7 +63,7 @@ const Icons = {
 
 const DATA = {
   navbar: [
-    { href: "/tutorial", icon: Option, label: "Tutorial" },
+    { href: "https://github.com/antrxc/timeCapsule", icon: Option, label: "Source Repo" },
   ],
   contact: {
     social: {
